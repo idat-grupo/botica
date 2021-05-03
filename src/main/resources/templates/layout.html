@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head">
+<meta charset="utf-8">
+<title th:text="${titulo}"></title>
+<script type="text/javascript"
+	th:href="@{/script/jquery/jQuery_v3.6.0.js}"></script>
+<script type="text/javascript"
+	th:href="@{/script/bootstrap/bootstrap.js}"></script>
+<link rel="stylesheet" th:href="@{/css/bootstrap/bootstrap.css}"></link>
+</head>
+<body>
+	
+	<nav th:fragment="menu" class="navbar navbar-expand-lg navbar-light bg-primary">
+	  <a class="navbar-brand" th:href="@{/}"><img th:src="@{/img/farmacia.png}"/>  SamFarma</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse"
+			data-target="#navbarNav" aria-controls="navbarNav"
+			aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+	  <div class="collapse navbar-collapse" id="navbarNav">
+	    <ul class="navbar-nav">
+				<li class="nav-item"><a class="nav-link" th:href="@{/lista_productos}">Lista de Productos
+						
+				</a></li>
+				<li class="nav-item"><a class="nav-link" th:href="@{/lista_personal}">Lista de Trabajadores
+						
+				</a></li>
+				<li class="nav-item"><a class="nav-link" th:href="@{/categoria}">Lista de Categorías
+						
+				</a></li>
+				<li class="nav-item"><a class="nav-link" th:href="@{/listar_pedidos}">Lista de Pedidos
+						
+				</a></li>
+				<li class="nav-item"><a class="nav-link" th:href="@{/login}"> Login
+						
+				</a></li>
+				
+			</ul>
+	  </div>
+	</nav>
+	
+
+</body>
+</html>
