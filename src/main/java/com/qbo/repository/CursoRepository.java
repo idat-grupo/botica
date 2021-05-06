@@ -8,8 +8,8 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
-import com.qbo.model.Curso;
-
+//import com.qbo.model.Curso;
+/*
 @Repository
 public interface CursoRepository extends JpaRepository<Curso, String> {
 
@@ -36,4 +36,4 @@ public interface CursoRepository extends JpaRepository<Curso, String> {
 	
 	
 	
-}
+}*/

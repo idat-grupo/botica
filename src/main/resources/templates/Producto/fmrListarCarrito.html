@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head th:replace="layout::head">
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<nav th:replace="layout::menu"></nav>
+			<table id="tblcurso" class="table">
+				<thead>
+					<tr>
+						<th scope="col">Id</th>
+						<th scope="col">Nombre</th>
+						<th scope="col">Cantidad</th>
+						<th scope="col">Precio</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr th:each="ventaProducto :${listarcarrito}">
+						<td th:text="${ventaProducto.idCarritoItem}"></td>
+						<td th:text="${ventaProducto.nomProducto}"></td>
+						<td th:text="${ventaProducto.cantidadTotal}"></td>
+						<td th:text="${ventaProducto.precioTotal}"></td>				
+					</tr>
+				</tbody>
+			</table>
+</body>
+</html>
