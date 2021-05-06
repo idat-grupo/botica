@@ -4,7 +4,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
-
+/*
 @Entity
 @Table(name = "curso")
 public class Curso {
@@ -45,8 +45,8 @@ public class Curso {
 		this.nomcurso = nomcurso;
 		this.credito = credito;
 	}
-	
-	
+	}
+	*/
 	
 
-}
+

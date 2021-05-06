@@ -5,10 +5,6 @@ $(document).on("click", "#btnagregarcurso", function() {
 	$("#modalcurso").modal("show");
 });
 
-$(document).on("click", "#btnagregarcarrito", function() {
-alert("Agregado al carrito");
-});
-
 $(document).on("click", ".btnactualizarcurso", function() {
 	$("#txtnomcurso").val($(this).attr("data-nomcurso"));
 	$("#txtcredcurso").val($(this).attr("data-credcurso"));

@@ -12,10 +12,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.qbo.model.Curso;
+//import com.qbo.model.Curso;
 import com.qbo.model.response.ResultadoResponse;
-import com.qbo.service.CursoService;
-
+//import com.qbo.service.CursoService;
+/*
 @Controller
 @RequestMapping("/Curso")
 public class CursoController {
@@ -63,4 +63,4 @@ public class CursoController {
 	
 
 	
-}
+}*/

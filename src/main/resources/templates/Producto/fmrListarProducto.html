@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head th:replace="layout::head">
+<meta charset="ISO-8859-1">
+<title>Lista de Productos</title>
+</head>
+<script type="text/javascript"
+th:src="@{/script/jsweb/producto/fmrListarProducto.js}"></script>
+<body>
+<nav th:replace="layout::menu"></nav>
+		<button type="button" id="btnagregarcarrito" class="btn btn-primary">
+				Registrar Curso</button>
+			<table id="tblcurso" class="table">
+				<thead>
+					<tr>
+						<th scope="col">Id</th>
+						<th scope="col">Nombre</th>
+						<th scope="col">Marca</th>
+						<th scope="col">Categoria</th>
+						<th scope="col">PrecioTotal</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr th:each="producto :${listarproducto}">
+						<td th:text="${producto.IdProducto}"></td>
+						<td th:text="${producto.nomProducto}"></td>
+						<td th:text="${producto.tmarca}"></td>
+						<td th:text="${producto.tcategoria}"></td>
+						<td th:text="${producto.precioProducto}"></td>	
+						<td>
+							<button type="button" id="btnagregarcarrito1" class="btn btn-info primary"
+								th:data-nomprod="${producto.nomProducto}"
+								th:data-precprod="${producto.precioProducto}">Agregar al Carrito</button>
+						</td>					
+					</tr>
+				</tbody>
+			</table>
+</body>
+</html>
